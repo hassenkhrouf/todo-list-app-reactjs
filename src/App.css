@@ -1,38 +1,51 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #191b1f;
+  direction: rtl;
 }
-
-.App-link {
-  color: #61dafb;
+.iconButton {
+ transition: all 0.2s ease-in-out !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iconButton:hover {
+  background-color: #c5c5c5 !important;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+}
+.todoCard {
+ transition: all 0.3s ease-in-out !important;
+}
+.todoCard:hover {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+   transform: scale(1.01);
+}
+@font-face {
+  font-family: 'Alexandria';
+  src: url("../public/fonts/Alexandria-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Alexandria';
+  src: url("../public/fonts/Alexandria-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Alexandria';
+  src: url("../public/fonts/Alexandria-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Alexandria';
+  src: url("../public/fonts/Alexandria-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Alexandria';
+  src: url("../public/fonts/Alexandria-ExtraBold.ttf");
+  font-weight: 800;
 }
